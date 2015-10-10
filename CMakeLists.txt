@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( FaceHarold )
+find_package( OpenCV REQUIRED )
+add_executable( getFaces getfaces.cpp )
+target_link_libraries( getFaces ${OpenCV_LIBS} )
